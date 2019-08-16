@@ -45,7 +45,6 @@ class Ball {
   }
 }
 
-var voice = []
 var balls = []
 
 function loop() {
