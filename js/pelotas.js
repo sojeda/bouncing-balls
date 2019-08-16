@@ -46,6 +46,7 @@ class Ball {
 }
 
 var voice = []
+var balls = []
 
 function loop() {
   ctx.fillStyle = 'rgba(0, 0, 0, 0.25)';
@@ -71,3 +72,4 @@ function loop() {
   }
   requestAnimationFrame(loop);
 }
+
