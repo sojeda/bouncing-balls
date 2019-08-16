@@ -43,6 +43,22 @@ class Ball {
     this.y += this.velY;
 
   }
+
+  collisionDetect() {
+    for (var j = 0; j < balls.length; j++) {
+      if (!(this === balls[j])) {
+        var dx = this.x - balls[j].x;
+        var dy = this.y - balls[j].y;
+        var distance = Math.sqrt(dx * dx + dy * dy);
+
+        if (distance < this.size + balls[j].size) {
+          balls[j].color = this.color = 'rgb(' + random(0, 255) + ',' + random(0, 255) + ',' + random(0, 255) +')';
+        }
+      }
+    }
+  }
+
 }
 
 var balls = []
+
