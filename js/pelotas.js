@@ -106,4 +106,8 @@ function loop() {
    requestAnimationFrame(loop);
 }
 
+class Ball extends shape {
+   constructor ()
+}
+
 loop();
