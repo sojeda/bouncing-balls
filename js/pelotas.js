@@ -20,7 +20,16 @@ var ctx = canvas.getContext('2d');
 var width = canvas.width = window.innerWidth;
 var height = canvas.height = window.innerHeight;
 
-class Ball extends Shape {
+class Shape {
+   
+   constructor(x, y, velX, velY, color, size) {
+      this.x = x;
+      this.y = y;
+      this.velX = velX;
+      this.velY = velY;
+      this.color = color;
+      this.size = size;
+   }
    
    draw() {
       ctx.beginPath();
@@ -64,6 +73,13 @@ class Ball extends Shape {
       }
    }
    
+}
+
+class Ball extends Shape{
+   constructor(){
+      super(x, y, velX, velY, color, size);
+
+   }
 }
 
 var balls = [];
