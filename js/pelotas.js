@@ -75,6 +75,13 @@ class Ball {
    
 }
 
+class Ball extends Shape{
+   constructor(){
+      super(x, y, velX, velY, color, size);
+      
+   }
+}
+
 var balls = [];
 
 while (balls.length < 25) {
