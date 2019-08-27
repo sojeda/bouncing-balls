@@ -27,6 +27,7 @@ class Shape {
       this.y = y;
       this.velX = velX;
       this.velY = velY;
+      this.exists = true
    }
    
    draw() {
