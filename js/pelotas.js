@@ -22,13 +22,11 @@ var height = canvas.height = window.innerHeight;
 
 class Shape {
    
-   constructor(x, y, velX, velY, color, size) {
+   constructor(x, y, velX, velY) {
       this.x = x;
       this.y = y;
       this.velX = velX;
       this.velY = velY;
-      this.color = color;
-      this.size = size;
    }
    
    draw() {
@@ -76,9 +74,10 @@ class Shape {
 }
 
 class Ball extends Shape{
-   constructor(){
-      super(x, y, velX, velY, color, size);
-
+   constructor(x, y, velX, velY, color, size){
+      super(x, y, velX, velY);
+      this.color = color;
+      this.size = size;
    }
 }
 
