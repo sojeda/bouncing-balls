@@ -27,7 +27,7 @@ class Shape {
       this.y = y;
       this.velX = velX;
       this.velY = velY;
-      this.exists = false;
+      this.exists = true;
    }
    
    draw() {
@@ -76,7 +76,7 @@ class Shape {
 
 class Ball extends Shape{
    constructor(x, y, velX, velY, exists, color, size){
-      super(x, y, velX, velY, exists, color, size);
+      super(x, y, velX, velY, exists);
       this.color = color;
       this.size = size;
    }
