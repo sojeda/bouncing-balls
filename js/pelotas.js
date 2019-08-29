@@ -26,7 +26,12 @@ class Shape {
         this.velY = velY;
         this.exists = exists;
     }
+
+    draw() {
+
+    }
 }
+
 
 class Ball extends Shape {
     constructor(x, y, velX, velY, color, size) {
