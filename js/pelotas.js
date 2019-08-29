@@ -27,14 +27,12 @@ class Shape {
         this.exists = exists;
     }
 
-    draw() {
-
-    }
+    draw() {}
 }
 
 
 class Ball extends Shape {
-    constructor(x, y, velX, velY, color, size) {
+    constructor(x, y, velX, velY, color, size, exists) {
         super(x, y, velX, velY, exists);
 
         this.color = color;
@@ -185,6 +183,7 @@ const evilBall = new EvilCircle(
     true
 );
 evilBall.setControls();
+
 
 const loop = () => {
     ctx.fillStyle = 'rgba(0, 0, 0, 0.25)';
